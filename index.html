@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+	<a href="/" class="logo">
+		<img src="images/logo.svg" alt="logo">
+	</a>
+	<button class="menuBtn">
+		<div class="line"></div>
+		<div class="line"></div>
+	</button>
+</header>
+<div class="first-page">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<h1 class="title text-uppercase">Architecture &amp; Light Bureau</h1>
+			</div>
+			<div class="col-lg-6 d-none d-lg-block"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 d-lg-block"></div>
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<p class="small_desc">Создаем проекты любой сложности и решаем самые смелые задачи в области архитектурно-художественного, ландшафтного и интерьерного освещения.</p>
+				<a href="#contact" class="btn btn-light rounded-pill border-0 text-white text-uppercase align-items-center justify-content-center main_btn">Связаться с нами<img src="images/btn_arrow.svg" alt="icon"></a>
+			</div>
+		</div>
+	</div>
+	<a class="scrollIndicator" href="#down">Листай<br>вниз</a>
+</div>
+<section id="down">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+				<h3 class="small_title">наш подход</h3>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+				<p class="animText anim_no_hide section-text">
+					Наделить концепцию смыслом, изменить пространство, подчеркнуть важное, внести характер и идею, придать чувство безопасности и комфорта.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+				<h3 class="small_title">наши проекты</h3>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-12 col-12 small-col">
+				<div class="projects_block">
+					<div class="btn-block d-flex align-items-center">
+						<button>Смотреть Все</button>
+						<a href="/projects">Проекты</a>
+						<span>(0)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+<section id="contact">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+				<h3 class="small_title">начать проект</h3>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+				<h2 class="animText anim_no_hide">Опишите ваш проект</h2>
+				<form>
+					<div class="double">
+						<div class="form-floating w-100">
+							<input required="" name="name" type="text" class="form-control bg-transparent border-end-0 border-start-0 border-top-0 rounded-0 ps-0" id="name" placeholder="name@example.com">
+							<label class="ps-0" for="name">Ваше имя</label>
+						</div>
+						<div class="form-floating w-100">
+							<input required="" name="phone" type="text" class="form-control bg-transparent border-end-0 border-start-0 border-top-0 rounded-0 ps-0" id="phone" placeholder="name@example.com">
+							<label class="ps-0" for="phone">Ваш номер телефона</label>
+						</div>
+					</div>
+					<div class="form-floating w-100">
+						<input name="company" type="text" class="form-control bg-transparent border-end-0 border-start-0 border-top-0 rounded-0 ps-0" id="company" placeholder="name@example.com">
+						<label class="ps-0" for="company">Название компании (необязательно)</label>
+					</div>
+					<div class="blockWithCount mb-5 w-100">
+						<div class="form-floating w-100 mb-0">
+							<input name="desc" maxlength="200" type="text" class="form-control bg-transparent border-end-0 border-start-0 border-top-0 rounded-0 ps-0" id="about_input" placeholder="name@example.com">
+							<label class="ps-0" for="about_input">Опишите проект</label>
+						</div>
+						<div class="counter text-end" id="counter">0 / 200</div>
+					</div>
+					<div class="btn_section d-flex w-100 justify-content-between align-items-center">
+						<label class="sc-iCoGMd kMthTr">
+							<input accept="image/*" class="hidden-input" name="file" id="photo" type="file">
+							<div type="button" class="btn bg-transparent btn-outline-light rounded-pill border-1 text-white text-uppercase d-flex align-items-center justify-content-center main_btn">
+								<img src="images/attachment.svg" alt="icon" class="me-3">Добавьте файл</div>
+							</label>
+							<button type="submit" class="btn btn-light rounded-pill border-0 text-white text-uppercase d-flex align-items-center justify-content-center main_btn">Отправить заявку</button>
+						</div>
+					</form>
+				</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="footer_item">
+		<img src="images/logo.svg" class="logo" alt="logo">
+		<p>© 2021 ООО «СВ СЕРВИС ЛОГИСТИКА»</p>
+	</div>
+	<div class="footer_item">
+		<div class="top">
+			<div class="title">Напишите нам</div>
+			<a href="mailto:project@alburo.ru">project@alburo.ru</a>
+		</div>
+		<div class="bottom">
+			<a href="tel:+7 (843) 279-32-04">+7 (843) 279-32-04</a>
+			<div class="title">г. Казань, 420061,  ул. Николая Ершова, 1а, БЦ "Корстон"  офис 838, 8 этаж</div>
+		</div>
+	</div>
+	<div class="footer_item footer_item--left">
+		<a target="_blank" class="political">Политика конфиденциальности</a>
+		<div class="social_links"></div>
+		<p class="mobile_block">© 2021 ООО «СВ СЕРВИС ЛОГИСТИКА»</p>
+	</div>
+</footer>
+<div id="circle-light" class="circle-bg"></div>
+<div class="circle-shadow">
+	<div class="circle-noise"></div>
+</div>
+
+
+</body>
+</html>
